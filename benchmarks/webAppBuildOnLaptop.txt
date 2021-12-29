@@ -1,0 +1,19 @@
+sequential execution:
+
+Total:                             00:08:03.1562279
+Total:                             00:08:07.0316733
+Total:                             00:08:59.2787849
+Total:                             00:08:34.0494476
+Total:                             00:08:37.1383982
+---------------------------------------------------
+AVERAGE:                           00:08:28.1300000
+
+parallel execution:
+
+Total:                             00:05:50.4245998  (included parallel task Total:                        00:04:15.8077709)
+Total:                             00:06:33.5425879  (included parallel task Total:                        00:04:55.5917480)
+Total:                             00:06:24.1244980  (included parallel task Total:                        00:04:40.2206840)
+Total:                             00:06:31.0146683  (included parallel task Total:                        00:04:49.2845865)
+Total:                             00:06:55.8249122  (included parallel task Total:                        00:05:13.9599337)
+---------------------------------------------------
+AVERAGE:                           00:06:26.9800000
