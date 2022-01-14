@@ -3,11 +3,20 @@ A fairly simple solution to speed up your 🍰 [Cake](https://cakebuild.net/)  t
 
 ## Table of Contents
 
-1. [Overview](https://github.com/egorantonov/Cake.ParallelExecution#overview)
-1. [Benchmarks](https://github.com/egorantonov/Cake.ParallelExecution#benchmarks)
-1. [How To Use](https://github.com/egorantonov/Cake.ParallelExecution#how-to-use)
-1. [Pitfalls](https://github.com/egorantonov/Cake.ParallelExecution#pitfalls)
-1. [Useful Tips](https://github.com/egorantonov/Cake.ParallelExecution#useful-tips)
+- [Overview](#overview)
+- [Benchmarks](#benchmarks)
+  - [Test bench](#test-bench)
+  - [Time measurements](#time-measurements)
+    - [Sequential run](#sequential-run)
+    - [Parallel run](#parallel-run)
+    - [Comparison](#comparison)
+  - [CPU Utilization](#cpu-utilization)
+    - [Sequential](#sequential)
+    - [Parallel](#parallel)
+    - [Comparison](#comparison-1)
+- [How To Use](#how-to-use)
+- [Pitfalls](#pitfalls)
+- [Useful Tips](#useful-tips)
 
 ## Overview
 Are you fed up with long running build processes? That's enough! Let's get rid of it. The proposed solution allows you to save lots of time during daily routines.
