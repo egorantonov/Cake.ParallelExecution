@@ -1,5 +1,5 @@
 # Cake.ParallelExecution
-A fairly simple solution to speed up your 🍰 [Cake](https://cakebuild.net/)  tasks using parallel execution
+A fairly simple solution to speed up your 🍰 [Cake](https://cakebuild.net/) tasks using parallel execution
 
 ## Table of Contents
 
@@ -16,6 +16,7 @@ A fairly simple solution to speed up your 🍰 [Cake](https://cakebuild.net/)  t
     - [Comparison](#comparison-1)
 - [How To Use](#how-to-use)
 - [Pitfalls](#pitfalls)
+- [Known issues](#known-issues)
 - [Useful Tips](#useful-tips)
 
 ## Overview
@@ -123,6 +124,12 @@ Explore `/examples/` folder to know how it works.
 
 ## Pitfalls
 As it was mentioned earlier this solution is applicable to parallelizable and long-running tasks. If the task run time is less than Cake build time it may be better to leave it as is and run in a sequential order.
+
+## Known issues
+See the [Issues](/issues) section for the actual information.
+1. If you have a multidiplay workstation, the `start` command [might open](/issues/1) a new powershell window outside of the screen in some cases.
+
+2. A failed task [does not cancel](/issues/2) other tasks running in parallel. In fact, this behavior may be preferable because you don't have to restart all the tasks.
 
 ## Useful Tips
 1. Try to determine which parallelizable task is the most long-running. If possible, leave it in a main powershell instance, so other parallel task(s) will finish faster even with Cake script build step.
