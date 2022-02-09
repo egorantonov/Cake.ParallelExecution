@@ -126,10 +126,10 @@ Explore `/examples/` folder to know how it works.
 As it was mentioned earlier this solution is applicable to parallelizable and long-running tasks. If the task run time is less than Cake build time it may be better to leave it as is and run in a sequential order.
 
 ## Known issues
-See the [Issues](/issues) section for the actual information.
-1. If you have a multidiplay workstation, the `start` command [might open](/issues/1) a new powershell window outside of the screen in some cases.
+See the [Issues](https://github.com/egorantonov/Cake.ParallelExecution/issues) section for the actual information.
+1. If you have a multidiplay workstation, the `start` command [might open](https://github.com/egorantonov/Cake.ParallelExecution/issues/1) a new powershell window outside of the screen in some cases.
 
-2. A failed task [does not cancel](/issues/2) other tasks running in parallel. In fact, this behavior may be preferable because you don't have to restart all the tasks.
+2. A failed task [does not cancel](https://github.com/egorantonov/Cake.ParallelExecution/issues/2) other tasks running in parallel. In fact, this behavior may be preferable because you don't have to restart all the tasks.
 
 ## Useful Tips
 1. Try to determine which parallelizable task is the most long-running. If possible, leave it in a main powershell instance, so other parallel task(s) will finish faster even with Cake script build step.
